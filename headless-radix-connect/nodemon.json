@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "ignore": [],
+  "ext": "ts,json",
+  "exec": "node --experimental-specifier-resolution=node --loader ts-node/esm --inspect ./src/index.ts",
+  "watch": ["src/"]
+}
