@@ -3,7 +3,13 @@
 > ⚠️ **Warning**:
 > This code is experimental and not meant to be used in a production environment. Use on your own risk.
 
-Headless Radix Connect allows a nodejs express server to send dApp requests to the Radix Wallet.
+## Why use this?
+
+Headless Radix Connect enables use cases where a user does not have access to a browser/connector extension, e.g. telegram bot or in-game transactions.
+
+## What is this?
+
+A nodejs express server that establishes a p2p connection through webRTC to send dApp requests to the Radix Wallet.
 
 ## Getting started
 
@@ -38,3 +44,7 @@ Add link by Clicking `Link new Connector` and scanning the QR code.
 ## Connection password
 
 For convenience the connection password is stored in the file system at the project root level. If you want to display the QR code again run `npm run reset` or manually delete `connection-password.txt`.
+
+## License
+
+All code in this repository is licensed under the modified MIT license described in [LICENSE](/LICENSE).
