@@ -14,7 +14,7 @@ if (!networkConfig) throw new Error(`Unknown network ${network}`);
 const config = {
   [NetworkId.Stokenet]: {
     name: 'rola-tss-sveltekit',
-    origin: 'https://d12pqmackkn9gt.cloudfront.net',
+    origin: 'https://d346njantf1atm.cloudfront.net',
     dAppDefinitionAddress: 'account_tdx_2_12yzqmuj80lcz8zudxdxeupalvq9ghv30z63s9twnwxklts8p70g3nv',
     stage: networkConfig.networkName,
     aws: {

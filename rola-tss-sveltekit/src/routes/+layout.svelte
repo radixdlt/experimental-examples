@@ -2,20 +2,7 @@
   import Header from './Header.svelte';
   import './styles.css';
   import type { LayoutData } from './$types';
-  import { appLogger } from '$lib/helpers/logger';
-  import { onMount } from 'svelte';
-
   export let data: LayoutData;
-
-  appLogger.debug(data);
-
-  onMount(() => {
-    fetch('/api/config')
-      .then((res) => res.json())
-      .then((res) => {
-        appLogger.debug(res);
-      });
-  });
 
   const { networkId, dAppDefinitionAddress } = data;
 </script>
