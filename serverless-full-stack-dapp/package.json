@@ -1,5 +1,5 @@
 {
-  "name": "tss-svelte",
+  "name": "serverless-full-stack-dapp",
   "version": "0.0.1",
   "scripts": {
     "dev": "sst bind vite dev",
