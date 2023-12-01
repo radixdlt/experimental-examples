@@ -15,6 +15,9 @@ export const GatewayClient = (networkConfig: NetworkConfig) => {
   const { status, transaction, state } = GatewayApiClient.initialize({
     basePath: networkConfig.gatewayUrl,
     applicationName: 'dApp mgmt',
+    headers: {
+      "Cache-Control": "no-cache",
+    },
   })
 
   const wellKnownAddresses = () =>
