@@ -17,6 +17,7 @@ export const GatewayClient = (networkConfig: NetworkConfig) => {
     applicationName: 'dApp mgmt',
     headers: {
       "Cache-Control": "no-cache",
+      cache: "no-store",
     },
   })
 
