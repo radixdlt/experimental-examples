@@ -1,0 +1,184 @@
+@import '@fontsource/fira-mono';
+
+html {
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+:root {
+  --font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Fira Mono', monospace;
+  --color-bg-0: rgb(202, 216, 228);
+  --color-bg-1: hsl(209, 36%, 86%);
+  --color-bg-2: hsl(224, 44%, 95%);
+  --color-theme-1: #ff3e00;
+  --color-theme-2: #4075a6;
+  --color-text: rgba(0, 0, 0, 0.7);
+  --column-width: 42rem;
+  --column-margin-top: 4rem;
+
+  font-family: var(--font-body);
+  color: var(--color-text);
+
+  /* Core colors */
+  --color-radix-green-1: #00ab84;
+  --color-radix-green-2: #00c389;
+  --color-radix-green-3: #21ffbe;
+  --color-radix-blue-1: #060f8f;
+  --color-radix-blue-2: #052cc0;
+  --color-radix-blue-3: #20e4ff;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+
+  /* Accent colors */
+  --color-accent-red: #ef4136;
+  --color-accent-blue: #00aeef;
+  --color-accent-yellow: #fff200;
+  --color-alert-1: #e59700;
+  --color-alert-2: #ffe9be;
+  --color-radix-error-red-1: #c82020;
+  --color-radix-error-red-2: #fcebeb;
+
+  /* Neutral colors */
+  --color-grey-1: #003057;
+  --color-grey-2: #8a8fa4;
+  --color-grey-3: #ced0d6;
+  --color-grey-4: #e2e5ed;
+  --color-grey-5: #f4f5f9;
+
+  --theme-surface-1: var(--color-grey-5);
+  --theme-surface-2: var(--color-light);
+  --theme-surface-3: var(--color-grey-4);
+
+  --theme-text-primary: var(--color-grey-1);
+  --theme-text-secondary: var(--color-light);
+  --theme-subtext: var(--color-grey-2);
+
+  --theme-success-primary: var(--color-radix-green-2);
+
+  --theme-error-primary: var(--color-radix-error-red-1);
+  --theme-error-secondary: var(--color-radix-error-red-2);
+
+  --theme-border: var(--color-grey-4);
+  --theme-border-strong: var(--color-grey-1);
+  --theme-border-separator: var(--color-grey-3);
+
+  --theme-button-primary: var(--color-radix-blue-2);
+
+  --radix-connect-button-border-radius: 50px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  background-color: var(--theme-surface-3);
+  background-size: 100vw 100vh;
+  /* background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%); */
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+p {
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-theme-1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+button,
+input {
+  all: unset;
+}
+
+pre {
+  font-size: 16px;
+  font-family: var(--font-mono);
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+  padding: 0.5em;
+  overflow-x: auto;
+  color: var(--color-text);
+}
+
+.text-column {
+  display: flex;
+  max-width: 48rem;
+  flex: 0.6;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.disabled {
+  opacity: 50%;
+  pointer-events: none;
+}
