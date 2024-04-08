@@ -1,0 +1,54 @@
+[package]
+name = "manifest-builder-examples"
+version = "0.1.0"
+edition = "2021"
+description = "Example usages of the Rust manifest builder."
+
+[dependencies]
+sbor = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
+scrypto = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
+transaction = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
+
+# # =========
+# Metadata
+# =========
+
+[[bin]]
+name = "metadata_two_way_linking"
+path = "src/bin/metadata/two_way_linking.rs"
+
+[[bin]]
+name = "metadata_set_remove_lock"
+path = "src/bin/metadata/set_remove_lock.rs"
+
+[[bin]]
+name = "metadata_using_different_types"
+path = "src/bin/metadata/using_different_types.rs"
+
+# =========
+# Packages
+# =========
+
+[[bin]]
+name = "packages_publish"
+path = "src/bin/packages/publish.rs"
+
+# ==========
+# Resources
+# ==========
+
+[[bin]]
+name = "new_fungible_resource"
+path = "src/bin/resources/new_fungible_resource.rs"
+
+[[bin]]
+name = "mint_fungible"
+path = "src/bin/resources/mint_fungible.rs"
+
+[[bin]]
+name = "new_non_fungible_resource"
+path = "src/bin/resources/new_non_fungible_resource.rs"
+
+[[bin]]
+name = "mint_non_fungible"
+path = "src/bin/resources/mint_non_fungible.rs"
