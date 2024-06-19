@@ -19,7 +19,7 @@ func assert(condition bool, message string) {
 
 // networkId: 1 - Mainnet, 2 - Stokenet, ...
 // mnemonic: words list space separated
-// passphrase: optional
+// passphrase: for Wallet comatible account use empty string
 // index: index of an account, starting from 0 (multiple accounts can be created for one mnemonic)
 func derive_account_from_mnemonic(networkId uint8, mnemonic string, passphrase string, index uint32) ([]byte, []byte, *radix_engine_toolkit_uniffi.Address) {
 
